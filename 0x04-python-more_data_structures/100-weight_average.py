@@ -8,4 +8,3 @@ def weight_average(my_list=[]):
         ave += tup[0] * tup[1]
         div += tup[1]
     return float(ave / div)
-    
