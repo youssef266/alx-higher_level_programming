@@ -9,7 +9,7 @@ class Square:
     """
 
 Represent
- a 
+ a clas that
  square.
     """
     pass
