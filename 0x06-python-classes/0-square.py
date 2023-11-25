@@ -6,10 +6,8 @@ Define a class Square.
 
 
 class Square:
-    """
-
-Represent
- a clas that
- square.
+    """Represent
+    a clas that
+    square.
     """
     pass
