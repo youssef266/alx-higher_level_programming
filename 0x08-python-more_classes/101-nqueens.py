@@ -1,5 +1,8 @@
 import sys
 
+"""ths model is for """
+
+
 def is_safe(board, row, col, n):
     """
     Check if it's safe to place a queen in the given row and column of the board.
