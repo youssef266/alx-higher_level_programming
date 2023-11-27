@@ -16,17 +16,17 @@ def is_safe(board, row, col, n):
     Returns:
         bool: True if it's safe to place a queen, False otherwise.
     """
-    # Check if there is a queen in the same row to the left
+
     for i in range(col):
         if board[row][i] == 1:
             return False
 
-    # Check upper diagonal on the left side
+
     for i, j in zip(range(row, -1, -1), range(col, -1, -1)):
         if board[i][j] == 1:
             return False
 
-    # Check lower diagonal on the left side
+
     for i, j in zip(range(row, n, 1), range(col, -1, -1)):
         if board[i][j] == 1:
             return False
@@ -69,23 +69,23 @@ def solve_nqueens_util(board, col, n, solutions):
         solutions (list[list[list[int]]]): List to store solutions.
     """
     if col == n:
-        # Solution found, copy the board and add to solutions
+
         solutions.append([row[:] for row in board])
         return
 
     for i in range(n):
         if is_safe(board, i, col, n):
-            # Place a queen and move to the next column
+
             board[i][col] = 1
             solve_nqueens_util(board, col + 1, n, solutions)
-            # Backtrack: remove the queen to explore other possibilities
+
             board[i][col] = 0
 
 def main():
     """
     Main function to handle command line arguments and execute the program.
     """
-    # Check command line arguments
+
     if len(sys.argv) != 2:
         print("Usage: nqueens N")
         sys.exit(1)
@@ -100,10 +100,10 @@ def main():
         print("N must be at least 4")
         sys.exit(1)
 
-    # Solve the N-Queens problem
+
     solutions = solve_nqueens(n)
 
-    # Print solutions
+
     for solution in solutions:
         print_solution(solution)
         print()
