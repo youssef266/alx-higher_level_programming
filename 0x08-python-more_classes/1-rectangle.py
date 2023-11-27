@@ -58,6 +58,7 @@ class Rectangle:
         """
             getter function for private attribute height
             Returns: height
+            handling all the hight exceptions
         """
         return self.__height
 
@@ -67,6 +68,7 @@ class Rectangle:
             setter function for the private attribute height
             Args:
                 value (int): new height value
+            handling all the hight exceptions
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
