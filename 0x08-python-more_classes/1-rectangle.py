@@ -12,9 +12,7 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """
             initialises the instances
-            Args:
-                width (int): width of the rectangle
-                height (int): height of the rectangle
+            
             width must be >= 0
             and must be an int
         """
