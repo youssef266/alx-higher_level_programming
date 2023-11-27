@@ -7,7 +7,9 @@ import sys
 
 
 def init_board(n):
-    """Initialize an `n`x`n` sized chessboard with 0's."""
+    """Initialize an `n`x`n` sized chessboard with 0's.
+    and append all by range
+    """
     board = []
     [board.append([]) for i in range(n)]
     [row.append(' ') for i in range(n) for row in board]
@@ -15,7 +17,9 @@ def init_board(n):
 
 
 def board_deepcopy(board):
-    """Return a deepcopy of a chessboard."""
+    """Return a deepcopy of a chessboard.
+    if it is really instance
+    """
     if isinstance(board, list):
         return list(map(board_deepcopy, board))
     return (board)
