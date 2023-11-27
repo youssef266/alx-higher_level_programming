@@ -41,6 +41,7 @@ def xout(board, row, col):
 
     All spots where non-attacking queens can no
     longer be played are X-ed out.
+    al the possibel movments
 
     Args:
         board (list): The current working chessboard.
