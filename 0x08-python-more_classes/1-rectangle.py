@@ -23,7 +23,7 @@ class Rectangle:
         elif width < 0:
                 raise ValueError("height must be >= 0") 
         else:
-            self.__width = width
+            self._width = width
 
         if isinstance(height, int):
             if height < 0:
