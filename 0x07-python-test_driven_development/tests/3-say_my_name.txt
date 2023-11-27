@@ -1,0 +1,57 @@
+# doctest_3-say_my_name.txt
+===============================
+Tests to 3-say_my_name.txt
+===============================
+
+This library print a message  with the next format "Hello my name is <name> <last_name:optional>
+``say_my_name(first_name, last_name="")``.
+
+File ``3-say_my_name.py``
+
+Return: None
+
+Importing the function:
+
+	  >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Test to realize: 
+
+     >>> say_my_name('youssef', 'taha')
+     My name is youssef taha
+
+     >>> say_my_name('bakr', 'taha')
+     My name is bakr taha
+
+     >>> say_my_name('taha', 'moktar')
+     My name is taha moktar
+
+     >>> say_my_name('youssef')
+     My name is youssef 
+
+     >>> say_my_name('bakr')
+     My name is bakr 
+
+     >>> say_my_name(6)
+     Traceback (most recent call last):
+     	       ...
+     TypeError: first_name must be a string
+
+     >>> say_my_name()
+     Traceback (most recent call last):
+	  ...
+     TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+     >>> say_my_name(['youssef'], 'taha')
+     Traceback (most recent call last):
+     	       ...
+     TypeError: first_name must be a string
+
+     >>> say_my_name(['youssef'], ['youssef'])
+     Traceback (most recent call last):
+     	       ...
+     TypeError: first_name must be a string
+
+     >>> say_my_name('youssef', 5)
+     Traceback (most recent call last):
+     	       ...
+     TypeError: last_name must be a string
