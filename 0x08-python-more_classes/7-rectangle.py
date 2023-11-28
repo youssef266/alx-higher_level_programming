@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
     7-rectangle: class Rectangle
+    based on 6
 """
 
 
@@ -12,6 +13,7 @@ class Rectangle:
             height (int): height of the rectangle
             number_of_intances (int): number of objects of type rectangle
             print_symbol (str): the symbol used to print the rectangle
+        handling of all exceptions
     """
     number_of_instances = 0
     print_symbol = "#"
@@ -22,6 +24,7 @@ class Rectangle:
             Args:
                 width (int): width of the rectangle
                 height (int): height of the rectangle
+            handling of all exceptions
         """
         if isinstance(width, int):
             if width < 0:
@@ -43,6 +46,7 @@ class Rectangle:
         """
             getter function for private attribute width
             Retruns: width
+        handling of all exceptions
         """
         return self.__width
 
@@ -52,6 +56,7 @@ class Rectangle:
             setter function for private attribute width
             Args:
                 value (int): new width value
+            handling of all exceptions
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -64,6 +69,7 @@ class Rectangle:
         """
             getter function for private attribute height
             Returns: height
+        handling of all exceptions
         """
         return self.__height
 
@@ -73,6 +79,7 @@ class Rectangle:
             setter function for the private attribute height
             Args:
                 value (int): new height value
+            handling of all exceptions
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
