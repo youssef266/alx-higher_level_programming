@@ -1,15 +1,14 @@
 #!/usr/bin/python3
 """
 A Rectangle Class with public class attributes, private instance attributes
-(width, height), public methods and special methods
+(width, height)
 """
 
 
 class Rectangle():
     """
     A Rectangle Class with public class attributes,
-    private instance attributes width, height, public methods and
-    special methods.
+    private instance attributes width, height
     """
 
     number_of_instances = 0
@@ -18,8 +17,8 @@ class Rectangle():
         """
         Constructor of the class Rectangle
           Args:
-            - width (default = 0): int
-            - heigth (default = 0): int
+            - width: int
+            - heigth: int
         """
         self.height = height
         self.width = width
@@ -68,6 +67,7 @@ class Rectangle():
         Getter of the property value
           Args:
             - value: int
+        handling of all exceptions
         """
         if not isinstance(value, int):
             raise TypeError('width must be an integer')
@@ -88,6 +88,7 @@ class Rectangle():
         Getter of the property value
           Args:
             - value: int
+        handling of all exceptions
         """
         if not isinstance(value, int):
             raise TypeError('height must be an integer')
