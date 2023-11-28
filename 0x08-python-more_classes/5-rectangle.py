@@ -8,15 +8,16 @@ class Rectangle:
     """
         class Rectangle defines a rectangle
         Attributes:
-            width (int): width of the rectangle
-            height (int): height of the rectangle
+            width: width of the rectangle for type int
+            height: height of the rectangle for type int
     """
     def __init__(self, width=0, height=0):
         """
             initialises the instances
             Args:
-                width (int): width of the rectangle
-                height (int): height of the rectangle
+                width: width of the rectangle for type int
+                height: height of the rectangle for type int
+            handling of all exceptions
         """
         if isinstance(width, int):
             if width < 0:
@@ -45,7 +46,8 @@ class Rectangle:
         """
             setter function for private attribute width
             Args:
-                value (int): new width value
+                value: new width value for type int
+            handling of all exceptions
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -66,7 +68,8 @@ class Rectangle:
         """
             setter function for the private attribute height
             Args:
-                value (int): new height value
+                value: new height value for type int
+            handling of all exceptions
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
@@ -93,6 +96,7 @@ class Rectangle:
     def __str__(self):
         """
             return string representation of a rectangle
+            using # sign
         """
         rectangle = ""
         if self.__width is 0 or self.__height is 0:
