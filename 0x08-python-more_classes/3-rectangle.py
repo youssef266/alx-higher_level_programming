@@ -8,15 +8,17 @@ class Rectangle:
     """
         class Rectangle defines a rectangle
         Attributes:
-            width (int): width of the rectangle
-            height (int): height of the rectangle
+            width: width of the rectangle with a type of int
+            height : height of the rectangle with a type of int
+        handling of all exceptions
     """
     def __init__(self, width=0, height=0):
         """
             initialises the instances
             Args:
-                width (int): width of the rectangle
-                height (int): height of the rectangle
+                width (int): width of the rectangle of the type int
+                height (int): height of the rectangle of the type int
+            handling of all exceptions
         """
         if isinstance(width, int):
             if width < 0:
@@ -45,7 +47,8 @@ class Rectangle:
         """
             setter function for private attribute width
             Args:
-                value (int): new width value
+                value : new width value and type int
+            handling of all exceptions
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -67,6 +70,7 @@ class Rectangle:
             setter function for the private attribute height
             Args:
                 value (int): new height value
+            handling of all exceptions
         """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
@@ -78,6 +82,7 @@ class Rectangle:
         """
             public instance method to calculate area of rectangle
             Returns: area of rectangle
+            handling of all exceptions
         """
         return self.__width * self.__height
 
@@ -93,6 +98,7 @@ class Rectangle:
     def __str__(self):
         """
             return string representation of a rectangle
+            by using # sign
         """
         rectangle = ""
         if self.__width is 0 or self.__height is 0:

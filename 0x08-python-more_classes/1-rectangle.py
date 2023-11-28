@@ -6,8 +6,8 @@ class Rectangle:
     """
         class Rectangle defines a rectangle
         Attributes:
-            width (int): width of the rectangle with type int
-            height (int): height of the rectangle with type int
+            width: width of the rectangle with type int
+            height: height of the rectangle with type int
     """
     def __init__(self, width=0, height=0):
         """
@@ -37,6 +37,7 @@ class Rectangle:
         """
             getter function for private attribute width
             Retruns: width
+            and gets the width
         """
         return self.__width
 
@@ -45,7 +46,8 @@ class Rectangle:
         """
             setter function for private attribute width
             Args:
-                value (int): new width value
+                value: new width value for type int
+            if it is not instance handle typeerror and valueerror
         """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
