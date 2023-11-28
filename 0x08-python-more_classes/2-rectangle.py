@@ -12,8 +12,8 @@ class Rectangle():
         """
         Constructor of the class Rectangle
           Args:
-            - width: int
-            - heigth: int
+            - width: int defulat 0
+            - heigth: int defualt 0
         """
         self.height = height
         self.width = width
@@ -40,6 +40,7 @@ class Rectangle():
         Getter of the property value
           Args:
             - value: int
+        handling of all exceptions
         """
         if not isinstance(value, int):
             raise TypeError('width must be an integer')
@@ -60,6 +61,7 @@ class Rectangle():
         Getter of the property value
           Args:
             - value: int
+        handling of all exceptions
         """
         if not isinstance(value, int):
             raise TypeError('height must be an integer')
