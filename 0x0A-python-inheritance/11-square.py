@@ -5,17 +5,26 @@ Contains the class BaseGeometry and subclass Rectangle
 
 
 class BaseGeometry:
-    """A class with public instance methods area and integer_validator"""
+    """Reprsent base geometry based on 6-base_geometry.py"""
+
     def area(self):
-        """raises an exception when called"""
+        """a function that is not yet implemented."""
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-        """validates that value is an integer greater than 0"""
-        if type(value) is not int:
-            raise TypeError("{:s} must be an integer".format(name))
+        """validet the value and checks for the errors.
+
+        Args:
+            name : The name of the parameter and must be str.
+            value : The parameter to validate in type of int.
+        Raises:
+            If value is not an integer TypeError must be an integer,
+            If value is not greater than 0 ValueError must be greater than 0.
+        """
+        if type(value) != int:
+            raise TypeError("{} must be an integer".format(name))
         if value <= 0:
-            raise ValueError("{:s} must be greater than 0".format(name))
+            raise ValueError("{} must be greater than 0".format(name))
 
 
 class Rectangle(BaseGeometry):
