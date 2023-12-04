@@ -28,20 +28,27 @@ class BaseGeometry:
 
 
 class Rectangle(BaseGeometry):
-    """A representation of a rectangle"""
+    """Represent a rectangle and inhert from BaseGeometry."""
+
     def __init__(self, width, height):
-        """instantiation of the rectangle"""
-        self.integer_validator("width", width)
+        """Intialize a new Rectangle
+        with width and hight.
+        super class
+        Args:
+            width : The width of the new Rectangle with type of int.
+            height : The height of the new Rectangle with type of int.
+        """
+        super().integer_validator("width", width)
         self.__width = width
-        self.integer_validator("height", height)
+        super().integer_validator("height", height)
         self.__height = height
 
     def area(self):
-        """returns the area of the rectangle"""
+        """Return the area of the rectangle."""
         return self.__width * self.__height
 
     def __str__(self):
-        """informal string representation of the rectangle"""
+        """Return the print() and str() representation of a Rectangle."""
         return "[Rectangle] {:d}/{:d}".format(self.__width, self.__height)
 
 
