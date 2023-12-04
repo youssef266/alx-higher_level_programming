@@ -8,7 +8,7 @@ class MyInt(int):
         """create a new instance of the class"""
         return super(MyInt, cls).__new__(cls, *args, **kwargs)
 
-    def __eb__(self, other):
+    def __eq__(self, other):
         """what was != is now =="""
         return int(self) != other
 
