@@ -7,9 +7,17 @@ Contains the class BaseGeometry and subclass Rectangle
 class BaseGeometry:
     """Reprsent base geometry based on 6-base_geometry.py"""
 
-    def area(self):
-        """a function that is not yet implemented."""
-        raise Exception("area() is not implemented")
+def area(self):
+    """
+    Calculates and returns the area of the object.
+
+    Raises:
+        Exception: If the area() method is not implemented.
+
+    Returns:
+        float: The area of the object.
+    """
+    raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
         """validet the value and checks for the errors.
