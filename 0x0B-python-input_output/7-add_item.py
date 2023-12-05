@@ -7,9 +7,10 @@ loade_form_json = __import__('6-load_from_json_file').load_from_json_file
 
 
 args = list(sys.argv[1:])
+
 try:
     items = loade_form_json("add_item.json")
-except FileNotFoundError:
+except Exception:
     items = []
 finally:
     items.extend(args)
