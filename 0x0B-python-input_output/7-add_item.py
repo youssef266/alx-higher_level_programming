@@ -12,6 +12,6 @@ try:
     items = loade_form_json("add_item.json")
 except Exception:
     items = []
-finally:
-    items.extend(args)
-    save_to_json_file(items, "add_item.json")
+
+items.extend(args)
+save_to_json_file(items, "add_item.json")
