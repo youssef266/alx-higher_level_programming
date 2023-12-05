@@ -2,7 +2,7 @@
 """Contain a single function that read files"""
 
 
-def read_file(filename: str = "") -> None:
+def read_file(filename=""):
     """
     Read and print the contents of a file.
 
