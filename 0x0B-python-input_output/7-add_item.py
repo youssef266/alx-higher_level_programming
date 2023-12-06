@@ -10,4 +10,7 @@ try:
     my_list = load_from_json_file("add_item.json")
 except  Exception:
     my_list = []
-save_to_json_file(my_list + argv, "add_item.json")
+    save_to_json_file(my_list + argv, "add_item.json")
+
+except FileNotFoundError:
+    save_to_json_file(argv, "add_item.json")
