@@ -3,7 +3,8 @@
 
 
 class Student:
-    """Defines a student class"""
+    """Defines a student class 
+    with first_name, last_name and age"""
     def __init__(self, first_name, last_name, age):
         """Initializes instance data"""
         self.first_name = first_name
@@ -13,6 +14,7 @@ class Student:
     def to_json(self, attrs=None):
         """
             Retrieves the dictionary representation of  student
+            or the list of attributes if attrs is a list
         """
         dictionary = self.__dict__
         if attrs is None:
@@ -24,5 +26,6 @@ class Student:
     def reload_from_json(self, json):
         """
             Replaces all attributes of the Student instance
+            and then updates
         """
         self.__dict__.update(json)
