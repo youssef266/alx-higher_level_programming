@@ -13,8 +13,9 @@ class Student:
 
     def to_json(self, attrs=None):
         """
-            Retrieves the dictionary representation of  student
-            or the list of attributes if attrs is a list
+            Retrieves the dictionary representation 
+            of  studentfor the list of attributes 
+            if attrs is a list
         """
         dictionary = self.__dict__
         if attrs is None:
