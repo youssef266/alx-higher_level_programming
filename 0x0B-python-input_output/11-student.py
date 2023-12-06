@@ -14,12 +14,14 @@ class Student:
 
     def to_json(self, attrs=None):
         """retrieves a dictionary representation of a Student"""
-        dictionary = self.__dict__
         if attrs is None:
-            return dictionary
-
-        d = {k: v for k, v in dictionary.items() if k in attrs}
-        return d
+            return self.__dict__
+        else:
+            new_dict = {}
+            for i in attrs:
+                if i in self.__dict__:
+                    new_dict[i] = self.__dict__[i]
+            return new_dict
     def reload_from_json(self, json):
         """
         Replaces all attributes of the Student instance
