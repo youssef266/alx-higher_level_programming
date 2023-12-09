@@ -12,7 +12,7 @@ class Square:
         Args:
             size (int): The size of the new square.
         """
-        self.__size = size
+        self._size = size
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
