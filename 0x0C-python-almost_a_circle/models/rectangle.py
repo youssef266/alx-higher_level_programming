@@ -16,6 +16,11 @@ class Rectangle(Base):
             height: is for handling the height of the rectangle
             x:an att for type int private
             y: an att for type int private
+        Raises:
+            TypeError: If either of width or height is not an int.
+            ValueError: If either of width or height <= 0.
+            TypeError: If either of x or y is not an int.
+            ValueError: If either of x or y < 0.
         """
         self.width = width
         self.height = height
@@ -25,7 +30,7 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """is gets the width"""
+        """set/get is gets the width"""
         return self.__width
 
     @width.setter
@@ -38,7 +43,7 @@ class Rectangle(Base):
 
     @property
     def hight(self):
-        """git the higth"""
+        """set/get git the higth"""
         return self.__hight
 
     @hight.setter
@@ -51,7 +56,7 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """git the x"""
+        """set/get git the x"""
         return self.__x
 
     @x.setter
@@ -64,7 +69,7 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """git the y"""
+        """set/get git the y"""
         return self.__y
 
     @y.setter
