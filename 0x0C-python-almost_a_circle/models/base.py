@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """this model is for class name base that is
-the base to square and rectangle
+the Base to Square and Rectangle
 """
 
 class Base:
-    """this is a base calss
+    """this is a Base calss
     Private Class Attributes:
         __nb_objects: an private for type int
     """
