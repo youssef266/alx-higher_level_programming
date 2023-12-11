@@ -36,3 +36,42 @@ class Rectangle(Base):
         if value <= 0:
             raise ValueError("width must be > 0")
         self.__width = value
+
+    @property
+    def hight(self):
+        """git the higth"""
+        return self.__hight
+
+    @hight.setter
+    def hight(self, value):
+        if not isinstance(value, int):
+            raise TypeError("hight must be an integer")
+        if value <= 0:
+            raise ValueError("hight must be > 0")
+        self.__hight = value
+
+    @property
+    def x(self):
+        """git the x"""
+        return self.__x
+
+    @x.setter
+    def x(self, value):
+        if not isinstance(value, int):
+            raise TypeError("x must be an integer")
+        if value <= 0:
+            raise ValueError("x must be >= 0")
+        self.__x = value
+
+    @property
+    def y(self):
+        """git the y"""
+        return self.__y
+
+    @y.setter
+    def y(self, value):
+        if not isinstance(value, int):
+            raise TypeError("y must be an integer")
+        if value <= 0:
+            raise ValueError("y must be >= 0")
+        self.__y = value
