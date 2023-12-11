@@ -30,7 +30,7 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """set/get is gets the width"""
+        """Set/get the width of the Rectangle."""
         return self.__width
 
     @width.setter
@@ -42,21 +42,21 @@ class Rectangle(Base):
         self.__width = value
 
     @property
-    def hight(self):
-        """set/get git the higth"""
-        return self.__hight
+    def height(self):
+        """Set/get the height of the Rectangle."""
+        return self.__height
 
-    @hight.setter
-    def hight(self, value):
+    @height.setter
+    def height(self, value):
         if not isinstance(value, int):
-            raise TypeError("hight must be an integer")
+            raise TypeError("height must be an integer")
         if value <= 0:
-            raise ValueError("hight must be > 0")
-        self.__hight = value
+            raise ValueError("height must be > 0")
+        self.__height = value
 
     @property
     def x(self):
-        """set/get git the x"""
+        """Set/get the x coordinate of the Rectangle."""
         return self.__x
 
     @x.setter
@@ -69,7 +69,7 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """set/get git the y"""
+        """Set/get the y coordinate of the Rectangle."""
         return self.__y
 
     @y.setter
