@@ -16,7 +16,11 @@ class Rectangle(Base):
             height: is for handling the height of the rectangle
             x:an att for type int private
             y: an att for type int private
-        Handling Exiptions:
+         Raises:
+            TypeError: If either of width or height is not an int.
+            ValueError: If either of width or height <= 0.
+            TypeError: If either of x or y is not an int.
+            ValueError: If either of x or y < 0.
         """
         self.width = width
         self.height = height
