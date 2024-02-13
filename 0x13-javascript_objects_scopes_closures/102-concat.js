@@ -1,6 +1,6 @@
 #!/usr/bin/node
-const fs = require('fs');
+const frist_arg = require('fs');
 
-const fArg = fs.readFileSync(process.argv[2]).toString();
-const sArg = fs.readFileSync(process.argv[3]).toString();
-fs.writeFileSync(process.argv[4], fArg + sArg);
+const first_Arg = frist_arg.readFileSync(process.argv[2]).toString();
+const secound_Arg = frist_arg.readFileSync(process.argv[3]).toString();
+frist_arg.writeFileSync(process.argv[4], first_Arg + secound_Arg);
