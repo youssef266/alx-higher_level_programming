@@ -14,6 +14,3 @@ if __name__ == "__main__":
         print(row)
     cur.close()
     db.close()
-    print(sys.argv[1])
-    print(sys.argv[2])
-    print(sys.argv[3])
