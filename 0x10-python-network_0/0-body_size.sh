@@ -1,10 +1,3 @@
 #!/bin/bash
-
-# Check if URL is provided as an argument
-if [ $# -eq 0 ]; then
-    echo "Usage: $0 <URL>"
-    exit 1
-fi
-
-# Send request and store the response in a variable
-response=$(curl -s -w "%{size_download}" -o /dev/null "$1")
+# Get the response body for a given URL for 200 status code responses.
+curl -sL "$1"
