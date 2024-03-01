@@ -3,6 +3,7 @@
 - takes in a URL
 - sends a request to the URL
 - displays the body of the response.
+prints an error code if an error is returned.
 """
 import sys
 import requests
@@ -11,8 +12,8 @@ import requests
 if __name__ == "__main__":
     url = sys.argv[1]
 
-    r = requests.get(url)
-    if r.status_code >= 400:
-        print("Error code: {}".format(r.status_code))
+    reg = requests.get(url)
+    if reg.status_code >= 400:
+        print("Error code: {}".format(reg.status_code))
     else:
-        print(r.text)
+        print(reg.text)
