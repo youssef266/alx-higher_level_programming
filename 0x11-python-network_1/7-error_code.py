@@ -12,8 +12,8 @@ import requests
 if __name__ == "__main__":
     url = sys.argv[1]
 
-    reg = requests.get(url)
-    if reg.status_code >= 400:
-        print("Error code: {}".format(reg.status_code))
+    req = requests.get(url)
+    if req.status_code >= 400:
+        print("Error code: {}".format(req.status_code))
     else:
-        print(reg.text)
+        print(req.text)
